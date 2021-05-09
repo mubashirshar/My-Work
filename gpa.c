@@ -1,8 +1,10 @@
 #include <stdio.h>
 int main()
 {
+   // here i have decleared my 5 subjects you can declear your own subjects //
    float dld, eca, pf, ps, cal, percentage;
    printf("                           **COMSATS CGPA CALCULATOR**      \n ");
+   
    printf(" Note: Total Marks are Available on Hybird Portal, in Summary Portion      \n ");
    printf(" Note: Lab Subjects Total Marks are not available you can calculate them through LAB Program    \n ");
    printf(" \n ");
@@ -18,12 +20,14 @@ int main()
    printf("Enter cal total percentage ");
    scanf("%f", &cal);
    
-   
+   // here i have multiplied my subjects with 4 & 3 because some of my subjects are of 4 credit hours and 3 credit hours,  //
    percentage=dld*4+eca*4+pf*4+ps*3+cal*3;
    percentage=percentage/18;
    
    printf("Your total percentage is %f", percentage);
    if(percentage>=90 && percentage<=100)
+      
+      // down there is if condition according to comsats marks criteria //
   {
      printf("\nGPA=4.0");
      printf("\nA");
